@@ -1,9 +1,7 @@
 services:
   - type: web
-    name: staticfiles
+    name: django-wallpaperlib
     env: static
     staticRules:
       - root: staticfiles
         rule: /static/*
-      - root: media
-        rule: /media/*
