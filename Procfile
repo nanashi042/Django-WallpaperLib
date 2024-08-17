@@ -1,0 +1,1 @@
+web: gunicorn animeWallpaper.wsgi:application
