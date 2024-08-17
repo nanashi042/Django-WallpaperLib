@@ -26,8 +26,12 @@ SECRET_KEY = 'django-insecure-b7yju3)zy_#3an-7d1dbwuf!e^4sol-6w8#dvqs8@k-*s&^wv=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    'django-wallpaperlib.onrender.com',  # Add your Render domain
+    'localhost',
+    '127.0.0.1',
+    # Add any other domains or IPs if needed
+]
 
 # Application definition
 
