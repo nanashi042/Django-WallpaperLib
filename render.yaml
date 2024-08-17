@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: staticfiles
+    env: static
+    staticRules:
+      - root: staticfiles
+        rule: /static/*
+      - root: media
+        rule: /media/*
