@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Welcome
+{% endblock %}
+
+{% block content %}
+<h1 class="home" id="home"><a href="/">Wallpapers</a></h1>
+
+<!-- Search Form -->
+<form method="get" action="{% url 'home' %}" class="search-form">
+    <input type="text" name="search" placeholder="Search..." value="{{ request.GET.search }}" class="search-input">
+    <button type="submit" class="search-button">Search</button>
+</form>
+
+<!-- Display Images -->
+<div class="image-gallery">
+    {% if imgs %}
+        {% for img in imgs %}
+            <div class="image-item">
+                <img src="{{ img }}" alt="Image" class="gallery-image">
+                <button onclick="changeToText('{{ img }}')" class="download-button">Download</button>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No images found.</p>
+    {% endif %}
+</div>
+
+{% endblock %}
