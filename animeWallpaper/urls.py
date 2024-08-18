@@ -22,5 +22,5 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",views.home ,name="home"),
-    path("customChara",include("customChara.urls") ,name="customChara"),
+    path("one-piece",include("customChara.urls") ,name="one piece"),
 ]

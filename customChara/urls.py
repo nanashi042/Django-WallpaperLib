@@ -4,6 +4,6 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.customChara),
+    path('', views.onePiece),
 
 ]

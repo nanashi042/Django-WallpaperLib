@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            Django App
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/customChara.css' %}">
+</head>
+<body>
+
+    <main>
+        {% comment %} <h1>The uffy Section </h1> {% endcomment %}
+        {% block content %}
+        
+        {% endblock  %}
+    </main>
+    <script src="{% static 'js/main.js'%}"></script>
+</body>
+</html>
